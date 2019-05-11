@@ -1,4 +1,5 @@
-<app-virtual-scroll [items]="items" [itemHeight]="50" [offset]="0" (update)="optimizedList = $event">
+<app-virtual-scroll [items]="items" [itemHeight]="50" [preload]="0" [offsetBottom]="0"
+  (update)="optimizedList = $event">
   <div class="item" *ngFor="let item of optimizedList; let i = index">
     {{item}}
   </div>

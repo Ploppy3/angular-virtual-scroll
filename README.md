@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Add it to your app.modules.ts declarations's array
 
 ```html
-<app-virtual-scroll [items]="items" [itemHeight]="50" [offset]="0" (update)="optimizedList = $event">
+<app-virtual-scroll [items]="items" [itemHeight]="50" [preload]="0" [offsetBottom]="0" (update)="optimizedList = $event">
   <div class="item" *ngFor="let item of optimizedList">
     {{item}}
   </div>
